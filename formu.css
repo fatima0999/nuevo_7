@@ -1,0 +1,120 @@
+
+body, html {
+  /*Estas líneas establecen tanto el margen como el relleno de los elementos <body> y <html> a 0 píxeles*/
+    margin:0;
+  /* Esta propiedad especifica cómo se deben calcular las dimensiones de los elementos.*/
+    padding: 0;
+  /* tamaño total de un elemento incluirá el contenido, el relleno y el borde, pero no el margen. */
+    box-sizing: border-box;
+  /*: Esta regla establece la altura del <body> y <html> al 100% del tamaño de su contenedor principal, que en este caso podría ser la ventana del navegador.*/
+    height: 100%;
+  /*sta propiedad establece un fondo de gradiente lineal para el <body> y <html>. */
+    background: linear-gradient(to right, #090136, #fff);
+  /*Esta regla asegura que la altura mínima del <body> y <html> sea del 100% de la altura de la ventana del navegador (vh significa "viewport height").*/
+      min-height: 100vh;
+  /*Esta propiedad especifica que los elementos <body> y <html> se comportarán como contenedores flexibles, lo que permite un diseño flexible y fácil de ajustar del contenido.*/
+      display: flex;
+  /* Esta regla centra el contenido horizontalmente dentro del <body> y <html>. */
+      justify-content: center;
+  /*sta regla alinea el contenido verticalmente dentro del <body> y <html> de manera predeterminada, que es similar al comportamiento predeterminado sin esta propiedad.*/
+      align-items: normal;
+}
+
+.video-background {
+  /*Esta propiedad establece la posición del elemento como fija en relación con la ventana del navegador. */
+  position: fixed;
+/*Estas propiedades establecen que los bordes del elemento estarán a una distancia de 0 píxeles desde la parte superior, derecha, inferior y izquierda de la ventana del navegador, respectivamente*/
+  top: 0;
+/*Estas propiedades establecen que los bordes del elemento estarán a una distancia de 0 píxeles desde la parte superior, derecha, inferior y izquierda de la ventana del navegador, respectivamente*/
+  right: 0;
+/*Estas propiedades establecen que los bordes del elemento estarán a una distancia de 0 píxeles desde la parte superior, derecha, inferior y izquierda de la ventana del navegador, respectivamente*/
+  bottom: 0;
+/*Estas propiedades establecen que los bordes del elemento estarán a una distancia de 0 píxeles desde la parte superior, derecha, inferior y izquierda de la ventana del navegador, respectivamente*/
+  left: 0;
+/*Esta propiedad oculta cualquier contenido que se desborde del elemento, evitando que se muestre fuera de los límites establecidos por las propiedades de posición.*/
+  overflow: hidden;
+/*Esta propiedad establece el índice z del elemento en -1. Un valor negativo para z-index coloca el elemento detrás de otros elementos en la pila de capas*/
+  z-index: -1;
+}
+
+.video-foreground {
+/*Esta propiedad establece el ancho del elemento con la clase video-foreground al 100% del ancho de su contenedor padre.*/
+  width: 100%;
+/*Esta propiedad establece la altura del elemento con la clase video-foreground al 100% de la altura de su contenedor padre.*/ 
+  height: 100%;
+  
+}
+
+.video-background iframe {
+  /*Esta propiedad establece el ancho del elemento <iframe> al 100% del ancho de su contenedor padre, que en este caso es el elemento con la clase */
+  width: 100%;
+  /* Esta propiedad establece la altura del elemento <iframe> al 100% de la altura de su contenedor padre, que en este caso es el elemento con la clase */
+  height: 100%;
+}
+
+.overlay-text {
+  /*Esta propiedad posiciona el elemento de manera absoluta dentro de su contenedor padre.*/
+  position: absolute;
+  /* Estas propiedades establecen que el punto de referencia del elemento estará en el centro tanto vertical como horizontalmente dentro de su contenedor padre*/
+  top: 50%;
+  /*Esta propiedad de transformación se utiliza para mover el elemento horizontalmente (-50%) y verticalmente (-50%) con respecto a su posición original.*/
+  left: 50%;
+  /*Esta propiedad de transformación se utiliza para mover el elemento horizontalmente (-50%) y verticalmente (-50%) con respecto a su posición original. */
+  transform: translate(-50%, -50%);
+  /*Esta propiedad alinea el texto dentro del elemento al centro horizontalmente.*/
+  text-align: center;
+  /*Esta propiedad establece el color del texto dentro del elemento a amarillo.*/
+  color:yellow;
+}
+
+.overlay-text h1 {
+/*Esta propiedad establece el tamaño de fuente del texto dentro del elemento <h1> en 40 píxeles*/
+  font-size: 40px;
+/*Esta propiedad establece un margen inferior de 20 píxeles para el elemento <h1>*/  
+  margin-bottom: 20px;
+}
+
+.overlay-text p {
+  /*Esta propiedad establece el tamaño de fuente del texto dentro de todos los elementos <p> en 15 píxeles. */
+  font-size: 15px;
+ 
+}
+img{
+ /*: Establece el ancho de todas las imágenes en 250 píxeles.*/ 
+  width: 250px;
+  /*Establece la altura de todas las imágenes en 150 píxeles.*/
+  height: 150px;
+  /*Fija la posición de las imágenes en relación con la ventana del navegador. */
+  position:fixed;
+  /*Esta propiedad se aplica generalmente a los elementos flexibles (como contenedores flexibles o elementos con display: flex;), no a elementos <img>. La propiedad justify-content se utiliza para alinear los elementos a lo largo del eje principal del contenedor.*/
+  justify-content:center;
+  /* Establece el radio de las esquinas de todas las imágenes en 30 píxeles, lo que crea un efecto de borde redondeado.*/
+  border-radius: 30px;
+  /*Esto parece ser un valor de margen inusual. Si se pretende utilizar una unidad de medida,*/
+  margin-top: 10cap;
+  /* Al igual que el valor anterior, parece ser un valor de margen inusual sin una unidad de medida específica.*/
+  margin-left: -10cap;
+
+}
+.cuadrado{
+    /*Establece el ancho de todos los elementos con la clase .cuadrado en 400 píxeles.*/
+    width: 400px;
+    /* Establece la altura de todos los elementos con la clase .cuadrado en 200 píxeles.*/
+    height: 200px;
+    /*
+    background-color:;*/
+    /*Similar al caso anterior, parece ser un valor de margen inusual sin una unidad de medida específica*/
+    margin-top: 35cap;
+    /*Al igual que el valor de margen anterior, parece ser un valor de margen inusual sin una unidad de medida específica*/
+    margin-left: -20cap;
+    /* Fija la posición de los elementos con la clase .cuadrado en relación con la ventana del navegado*/
+    position: fixed;
+    /*Establece el radio de las esquinas de los elementos con la clase .cuadrado en 60 píxeles, lo que crea un efecto de borde redondeado.*/
+    border-radius: 60px;
+    /* Establece el estilo de borde de los elementos con la clase .cuadrado como punteado.*/
+    border-style: dotted;
+    /*Si se pretende utilizar en un elemento que no es flexible, no tendrá ningún efecto.*/
+    justify-content:center;
+    /* Establece el color del borde de los elementos con la clase */
+    border-color: white;
+}
